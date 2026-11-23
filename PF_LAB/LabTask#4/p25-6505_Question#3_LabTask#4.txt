@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main()
+{
+    int x;
+int    y;
+printf("Enter x and y coordinates: ");
+    scanf("%d %d", &x, &y);
+    if (x==0)
+    {
+        if(y==0)
+        {
+            printf("Origin\n");
+        }
+        else
+        {
+            printf("Y-axis\n");
+        }
+    }
+    else if(y==0)
+    {
+        printf("X-axis\n");
+    }
+    else if(x>0)
+    {
+        if(y>0)
+        {
+            printf("Quadrant I\n");
+        }
+        else
+        {
+            printf("Quadrant IV\n");
+        }
+    }
+    else
+    {
+        if(y>0)
+        {
+            printf("Quadrant II\n");
+        }
+        else
+        {
+            printf("Quadrant III\n");
+        }
+    }
+return 0;
+}

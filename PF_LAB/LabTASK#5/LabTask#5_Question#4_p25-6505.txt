@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int students;
+	int marks;
+	int passed=0;
+    int failed=0;
+    int highest=0;
+    int total=0;
+    float average;
+    	printf("Enter the number of students: \n");
+		scanf("%d", &students);
+	for(int i=1;i<=students;i++)
+	{
+	
+		printf("Marks of student %d:\n", i);
+		scanf("%d", &marks);
+	   total=total+marks;
+        if(marks>=50)
+            passed++;
+        else
+            failed++;
+         if(marks>highest)
+        highest=marks;
+	}    
+	average=(float)total/students;
+    printf("Passed:%d\n", passed);
+    printf("Failed:%d\n", failed);
+    printf("Highest:%d\n", highest);
+    printf("Average:%.2f\n", average);
+	return 0;
+}

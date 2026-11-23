@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int pennies=368;
+int quarter=25;
+int nickle=5;
+int dime=10;
+int A=pennies/quarter;
+pennies=pennies%quarter;
+printf("Quarter=%d\n", A);
+int B=pennies/dime;
+pennies=pennies%dime;
+printf("Dime= %d\n", B);
+int C=pennies/nickle;
+pennies=pennies%nickle;
+printf("Nickle: %d\n", C);
+
+printf("Pennies=%d", pennies);
+return 0;
+}

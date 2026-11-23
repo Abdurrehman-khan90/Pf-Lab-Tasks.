@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+
+	int total_rows;
+	printf("Enter total rows:\n");
+	scanf("%d", &total_rows);
+	
+	
+	for(int i=0;i<=total_rows;i++)
+	{
+		for(int k=1;k<=total_rows-i;k++)
+		{
+			printf(" ");
+			
+		}
+		for(int j=0;j<=i;j++)
+	{
+			printf("%d ", i);
+	}
+	printf("\n");
+}
+	for(int i=total_rows-1; i>=0; i--)
+	{
+		for(int k=1;k<=total_rows-i;k++)
+		{
+			printf(" ");
+			
+		}
+		for(int j=0;j<=i;j++)
+	{
+			printf("%d ", i);
+	}
+	printf("\n");
+}
+return 0;
+	}

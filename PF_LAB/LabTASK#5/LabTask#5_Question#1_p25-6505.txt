@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+
+int score=0;
+int total_runs=0;
+int boundries=0;
+int dot_balls=0;
+for(int i = 1; i<=6; i++)
+{
+printf("  Ball %d runs:\n", i);
+scanf("%d", &score);
+total_runs=total_runs+score;
+if(score==4||score==6)
+boundries++;
+if(score==0)
+dot_balls++;
+}
+
+
+printf("Total Runs in one over are:%d\n", total_runs);
+printf("Boundries in the over:%d\n", boundries);
+printf("Dot Balls in the over are:%d\n", dot_balls);
+return 0;
+
+
+
+}

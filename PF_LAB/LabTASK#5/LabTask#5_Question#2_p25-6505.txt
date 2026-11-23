@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+int laptop_price;
+int current_savings;
+int monthly_savings;
+int month=0;
+printf("Enter the price of laptop:\n");
+scanf("%d", &laptop_price);
+printf("Enter current savings:\n");
+scanf("%d", &current_savings);
+printf("Enter your monthly savings:\n");
+scanf("%d", &monthly_savings);
+while(current_savings<laptop_price)
+{
+current_savings=current_savings+monthly_savings;
+month++;
+printf("Total savings after %d months = %d\n", month, current_savings);  
+    /*
+    The while loop runs only when savings are less than 
+    the laptop price. If current savings are already enough
+    the condition is false at the start so the loop
+    does not execute and months remains 0.
+    */
+
+
+}
+printf("Number of months needed for sara to buy a new laptop: %d\n", month);
+return 0;
+
+}

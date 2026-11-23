@@ -1,0 +1,65 @@
+#include<stdio.h>
+int main()
+{
+    int option;
+    int quantity;
+    int bill=0;
+    int total_items=0;
+    int discount=0;
+    int amount;
+do
+    {
+        printf("1.Tea       Rs 60\n");
+        printf("2.Samosa    Rs 40\n");
+        printf("3.Sandwich  Rs 180\n");
+        printf("4.Checkout\n");
+        printf("Enter choice: ");
+        scanf("%d", &option);
+
+        if(choice == 1)
+        {
+            printf("Quantity: ");
+            scanf("%d", &quantity);
+        bill=bill+(60*quantity);
+            total_items=total_items+quantity;
+         printf("Current bill: Rs %d\n", bill);
+        }
+        else if(choice==2)
+        {
+            printf("Quantity: ");
+            scanf("%d", &quantity);
+
+            bill=bill+(40*quantity);
+            total_items=total_items+quantity;
+printf("Current bill: Rs %d\n", bill);
+        }
+        else if(choice==3)
+        {
+            printf("Quantity: ");
+            scanf("%d", &quantity);
+
+            bill=bill+(180*quantity);
+            total_items=total_items+quantity;
+            printf("Current bill: Rs %d\n", bill);
+        }
+        else if(choice==4)
+        {
+            printf("Checkout\n");
+        }
+        else
+        {
+            printf("Invalid choice Try again! \n");
+        }
+}
+    while(choice!=4);
+    if(bill > 1000)
+    {
+        discount=bill*10/100;
+    }
+    amount=bill-discount;
+printf("Total items ordered: %d\n", total_items);
+    printf("Bill: Rs %d\n", bill);
+    printf("Discount: Rs %d\n", discount);
+    printf("Amount payable: Rs %d\n", amount);
+ return 0;
+}

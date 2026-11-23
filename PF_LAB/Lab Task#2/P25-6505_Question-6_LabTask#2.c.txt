@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int a,b;
+
+printf("Enter First Number: \n");
+scanf("%d", &a);
+printf("Enter Second Number: \n");
+scanf("%d", &b);
+float x=a/b;
+float y=(float) a/b;
+float z=(float) (a/b);
+printf("The first result will be: %f\n", x);
+printf("The second result will be: %f\n", y);
+printf("The third result will be: %f\n", z);
+
+return 0;
+
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+int pin;
+int attempts=3;
+int orignalpin=4321;
+do{
+printf("Dear Customer! Kindly Enter the code to activate your Bank Card:\n");
+scanf("%d", &pin);
+
+orignalpin==pin;
+if(orignalpin==pin)
+{
+printf("Your Bank Card is activated!\n");
+}
+else
+{
+printf("Wrong Password\n");
+attempts--;
+}
+if(attempts>0)
+printf("Total attempts Remaining:%d \n", attempts);
+
+
+}
+while(orignalpin!=pin&&attempts>0);
+if(orignalpin!=pin)
+{
+printf("Due to wrong input your card has been blocked!\n");
+}
+return 0;
+}

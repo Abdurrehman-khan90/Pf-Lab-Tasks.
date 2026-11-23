@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+float a;
+float diff;
+printf("Enter A: \n");
+scanf("%f", &a);
+printf("The value of a in float is: %f\n", a);
+int b=(int)a;
+printf("Value of a in int is: %d\n", b);
+diff=a-b;
+printf("Diffrence=%f", diff);
+return 0;
+
+
+}
